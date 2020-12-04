@@ -7,10 +7,10 @@ from os import remove, startfile
 from subprocess import run
 from termcolor import colored
 from urllib.error import HTTPError
-
+import colorama
+colorama.init()
 
 try:
-
     with open(' ', 'r', encoding='utf-8') as banner: #directory of banner.txt (optional)
 
         for line in banner.readlines():
@@ -244,12 +244,12 @@ while True:
         else:
             pass
 
-    audio_only_choice = input('\n\nDownload audio only? \n   1: Yes\n   .: No\n   c: Cancel\n\n  ->: ').lower()
+    audio_only_choice = input('\n\nDownload audio only? \n   1: Yes\n Any: No\n   C: Cancel\n\n  ->: ').lower()
 
     if audio_only_choice == '1':
         audio_only_choice = True
 
-    elif audio_only_choice == 'c':
+    elif audio_only_choice.lower() == 'c':
         quit()
 
     else:
@@ -270,7 +270,7 @@ while True:
             concat(path=Path)
         except AttributeError: pass
 
-    k = input('\nDownload another video? \n  1:  Yes\n  2:  Open Folder\n  -:  Exit\n  -->: ')
+    k = input('\nDownload another video? \n  1:  Yes\n  2:  Open Folder\nAny:  Exit\n  -->: ')
 
     if k == '1':
         pass
