@@ -1,6 +1,6 @@
-**DFY**
-Youtube Python downloader using pytube, with more options? audio only and all available resolutions
-*Before use*
-In line 14 add the directory to the "banner.txt" file (optional)
-In line 224 add the default directory for your downloads 
-Replace
+**DFY**<br />
+Youtube Python downloader using pytube, with more options? audio only and all available resolutions<br />
+*Before use*<br />
+In line 14 add the directory to the "banner.txt" file (optional)<br />
+In line 224 add the default directory for your downloads <br />
+Replace<br />
