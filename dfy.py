@@ -11,7 +11,7 @@ from urllib.error import HTTPError
 
 try:
 
-    with open('E://Python//Nier//banner.txt', 'r', encoding='utf-8') as banner:
+    with open(' ', 'r', encoding='utf-8') as banner: #directory of banner.txt (optional)
 
         for line in banner.readlines():
             print(line, end='')
@@ -221,7 +221,7 @@ Tk().withdraw()
 Path = filedialog.askdirectory() + '/'
 
 if Path is None:
-    Path = 'E://'
+    Path = '' #set a default directory here 
     print('No directory has been chosen. Using E:// as directory.', end='')
 else:
     print('\nDirectory has been chosen.', end=' ')
